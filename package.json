@@ -1,0 +1,19 @@
+{
+  "name": "anagram",
+  "private": true,
+  "description": "Playing around with anagrams",
+  "main": "index.js",
+  "author": "Silas Rioux",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-apidocjs": "^0.1.3"
+  }
+}
