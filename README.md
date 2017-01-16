@@ -7,6 +7,7 @@ https://sdrioux.github.io/anagram/
 
 * Node.js
 * Express
+* [Dynamoose](https://github.com/automategreen/dynamoose)
 * [ApiDoc](http://apidocjs.com/) for documentation
 
 ## Setup
