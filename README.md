@@ -26,3 +26,6 @@ gulp start-test
 ```
 ## Testing
 Tests are meant to be run against a local version of Dynamo, as opposed to the cloud version.  The cloud version takes anywhere from 5-10 seconds to delete and recreate a table.  We are resetting the table after every test, so as you can imagine, running the test suite can take a long time.  The local version does not have this issue.
+
+## Performance
+Performance running on my local environment hovered between 200-500ms per request.  This is significantly slower than the advertised "single-digit millisecond latency at any scale", that AWS advertises.  Supposedly, however, requests will be much faster if the server is hosted on EC2 in the same region as our Dynamo DB.
