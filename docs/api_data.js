@@ -84,6 +84,49 @@ define({ "api": [
   },
   {
     "type": "get",
+    "url": "/anagrams/areAnagrams",
+    "title": "Check if words are anagrams of each other.",
+    "name": "GetAnagrams",
+    "group": "Anagram",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Array",
+            "optional": false,
+            "field": "words",
+            "description": "<p>Array of words to check</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "200": [
+          {
+            "group": "200",
+            "type": "Boolean",
+            "optional": false,
+            "field": "result",
+            "description": "<p>True or false</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "HTTP/1.1 200 OK",
+          "content": " HTTP/1.1 200 OK\n {\n   result: true\n }",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "lib/routes.js",
+    "groupTitle": "Anagram"
+  },
+  {
+    "type": "get",
     "url": "/anagrams/:word",
     "title": "Get the anagrams for a given word.",
     "name": "GetAnagrams",
